@@ -5,3 +5,10 @@
 	email = flavono123@gmail.com
 [push]
 	default = current
+[alias]
+	co = checkout
+	br = branch
+	cm = commit -as
+	st = status
+	cp = cherry-pick
+	amd = commit -a --amend

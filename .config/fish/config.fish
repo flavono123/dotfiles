@@ -1,5 +1,9 @@
+# Aliases
 alias nv 'nvim'
-alias dotfile '/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias dot '/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+alias r 'bundle exec rails'
+alias rk 'bundle exec rake'
 
 # Fish (Space Fish)
 set SPACEFISH_PROMPT_ADD_NEWLINE false
