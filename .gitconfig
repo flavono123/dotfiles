@@ -1,1 +1,7 @@
-gitconfig
+[color]
+	ui = true
+[user]
+	name = flavono123
+	email = flavono123@gmail.com
+[push]
+	default = current
