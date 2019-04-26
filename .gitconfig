@@ -12,3 +12,5 @@
 	st = status
 	cp = cherry-pick
 	amd = commit -a --amend
+[core]
+	editor = nvim

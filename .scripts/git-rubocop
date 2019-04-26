@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+files_to_lint = `git status`.split("\n").filter {|line| line.match?('modified:')}.map {|modified_line| modified_line.gsub('modified:', '').strip}
+system('rubocop', *files_to_lint)
