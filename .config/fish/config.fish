@@ -12,6 +12,7 @@ set SPACEFISH_PROMPT_ADD_NEWLINE false
 # Ruby on Rails
 set -gx PATH ~/.rbenv/shims $PATH
 set -gx RAILS_ENV development
+set -gx GEM_EDITOR /usr/local/bin/nvim 
 
 # Custom scripts
 set -gx PATH $PATH ~/.scripts
