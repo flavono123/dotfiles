@@ -25,3 +25,5 @@ endif
 :command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
 
 set mouse=a
+
+let g:user_emmet_leader_key = '<c-e>'
