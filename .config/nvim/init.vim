@@ -20,3 +20,5 @@ endif
 " Redirect git grep's result to quickfix
 " https://stackoverflow.com/questions/21931116/getting-git-grep-to-work-effectively-in-vim
 :command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
+
+set mouse=a
