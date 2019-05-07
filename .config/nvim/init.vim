@@ -3,10 +3,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 
-"Ruby on Rails
+" Ruby on Rails
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
+
+" Web
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
