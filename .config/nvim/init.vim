@@ -27,3 +27,7 @@ endif
 set mouse=a
 
 let g:user_emmet_leader_key = '<c-e>'
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
