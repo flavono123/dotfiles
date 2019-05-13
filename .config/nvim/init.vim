@@ -1,7 +1,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Editor
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
 
 " Ruby on Rails
 Plug 'vim-ruby/vim-ruby'
