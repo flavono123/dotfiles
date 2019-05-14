@@ -10,6 +10,8 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 
+Plug 'kchmck/vim-coffee-script'
+
 " Web
 Plug 'mattn/emmet-vim'
 
