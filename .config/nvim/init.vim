@@ -12,6 +12,11 @@ Plug 'tpope/vim-endwise'
 
 Plug 'kchmck/vim-coffee-script'
 
+" JS
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
 " Web
 Plug 'mattn/emmet-vim'
 
