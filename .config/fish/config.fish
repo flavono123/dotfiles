@@ -6,6 +6,8 @@ alias r 'bundle exec rails'
 alias rk 'bundle exec rake'
 alias t 'rk test'
 
+alias dbrs 'git co master && git br | grep -v "master" | xargs git br -D'
+
 # Fish (Space Fish)
 set SPACEFISH_PROMPT_ADD_NEWLINE false
 
