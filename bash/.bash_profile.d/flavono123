@@ -1,7 +1,13 @@
 # vim: ft=sh
 
-man() {
-  tmux split-pane -b "man $1"
+m() {
+  err=$(man "$1" 2>&1)
+  if [[ $? -eq 0 ]]
+  then
+    tmux split-pane -b "man $1"
+  else
+    echo "$err"
+  fi
 }
 
 alias ls="ls --color=auto"
