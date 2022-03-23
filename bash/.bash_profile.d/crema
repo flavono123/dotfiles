@@ -1,4 +1,4 @@
-#!/bin/bash
+# vim: ft=sh
 
 export EDITOR='vi'
 alias ll='ls -FGl'

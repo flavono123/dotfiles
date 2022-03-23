@@ -1,4 +1,4 @@
-#!/bin/bash
+# vim: ft=sh
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

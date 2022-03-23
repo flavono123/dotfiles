@@ -1,4 +1,4 @@
-#!/bin/bash
+# vim: ft=sh
 
 # OpenSSL
 export PATH="/usr/local/opt/openssl/bin:$PATH"

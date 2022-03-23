@@ -1,4 +1,4 @@
-#!/bin/bash
+# vim: ft=sh
 
 man() {
   tmux split-pane -b "man $1"
