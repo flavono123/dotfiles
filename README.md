@@ -1,6 +1,7 @@
 ## Packages
 - bash
 - vim
+- tmux
 
 ## Install
 ```sh
