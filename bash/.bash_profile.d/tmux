@@ -1,0 +1,15 @@
+#!/bin/bash
+
+file=$HOME/.tmux-256color
+url=https://gist.githubusercontent.com/nicm/ea9cf3c93f22e0246ec858122d9abea1/raw/37ae29fc86e88b48dbc8a674478ad3e7a009f357/tmux-256color
+
+if [ ! -f "$file" ] || [ $(md5 -q $file) == "f8fdfb56acbf9546dd9c9d364fbb8cfa" ]
+then
+  wget -O $file $url
+fi
+
+tic -x $file
+
+
+alias tmux="TERM=xterm-256color tmux"
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# ref. https://gist.github.com/skyzyx/3438280b18e4f7c490db8a2a2ca0b9da
+if type brew &>/dev/null; then
+  brew_prefix=$(brew --prefix)
+  for d in ${brew_prefix}/opt/*/libexec/gnubin; do export PATH=$d:$PATH; done
+  for d in ${brew_prefix}/opt/*/libexec/gnuman; do export MANPATH=$d:$MANPATH; done
+fi
+
+# Set dircolors
+if [ -x "$(which dircolors)" ]
+then
+  eval "$(dircolors -b)"
+fi

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+export EDITOR='vi'
+alias ll='ls -FGl'
+alias la='ls -FGla'
+alias grep='grep --color=auto'
+alias r='bundle exec rails'
+alias rc='cd ~/c && bundle exec rails console'
+alias t='bundle exec rake test'
+alias ave="ansible-vault edit ~/crema-ansible/common/vault_credentials.yml"
+alias rce="bundle exec rails credentials:edit"
+alias rcs="undle exec rails credentials:show"
+
+export CREMA_STAGING_BRANCH="develop"
+export RAILS_ENV="development"
+export TZ="Asia/Seoul"
+
+# Suppress zsh warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Own Scripts
+export PATH="$HOME/.scripts:$PATH"

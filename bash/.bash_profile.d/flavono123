@@ -1,0 +1,7 @@
+#!/bin/bash
+
+man() {
+  tmux split-pane -b "man $1"
+}
+
+alias ls="ls --color=auto"

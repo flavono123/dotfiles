@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# OpenSSL
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+
+# imagemagick(crema)
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+
+# MariaDB(crema)
+export PATH="/usr/local/opt/mariadb@10.3/bin:$PATH"
