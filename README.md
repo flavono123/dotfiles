@@ -1,11 +1,7 @@
-## Packages
-- bash
-- vim
-- tmux
-
 ## Install
 ```sh
-stow -nv -S <pkg>* -t ~        # test
-stow -v -S <pkg>* -t ~
-stow -v -S <pkg>* -t ~ --adopt # overwirte existing files
+stow -nv -S <pkg> -t ~        # test before install
+stow -v -S <pkg> -t ~
+stow -v -S <pkg> -t ~ --adopt # overwirte to existing files
+stow -v -S * -t ~ --adopt     # install all package
 ```
