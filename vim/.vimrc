@@ -11,8 +11,15 @@ syntax on
 
 " finder
 let mapleader=","
-nnoremap <leader>p :GFiles<CR>
+nnoremap <leader>p :Files<CR>
 nnoremap <leader>f :Rg<CR>
+
+" buffer
+nnoremap <leader>h :bprev<CR>
+nnoremap <leader>l :bnext<CR>
+nnoremap <leader>k :bfirst<CR>
+nnoremap <leader>j :blast<CR>
+nnoremap <leader>b :ls<CR>:b<Space>
 
 " scroll in tmux
 set mouse=a
