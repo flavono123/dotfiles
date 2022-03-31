@@ -1,15 +1,13 @@
-def floatorinteger(v):
-  v | tostring |
-  if test("\\.") then
-   {"type": "float"}
+def floatorinteger:
+  if tostring | test("\\.") then
+    { "type": "float" }
   else
-   {"type": "integer"}
+    { "type": "integer" }
   end;
 
-def dateortext(v):
-  v |
+def dateorstring:
   if test("\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}") then
-    {"type": "date"}
+    { "type": "date" }
   else
     {
       "type": "text",
@@ -22,20 +20,18 @@ def dateortext(v):
     }
   end;
 
-def estype(v):
+def estype:
   if type=="number" then
-    floatorinteger(v)
+    floatorinteger
   elif type=="string" then
-    dateortext(v)
+    dateorstring
   else
-    type
+    { "type": type }
   end;
 
-def esprop(v):
+def esprop:
   if type=="object" then
-    {"properties":  v | with_entries(.value |= esprop(.))}
+    {"properties": with_entries(.value |= estype)}
   else
-    estype(v)
+    estype
   end;
-
-#with_entries(select(.key | test("offset|prospector|input|beat|fields|agent|@metadata") | not)) | walk(if type=="object" then to_entries | sort_by(.key) | from_entries else . end) |  with_entries(.value |= esprop(.))
