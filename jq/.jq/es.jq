@@ -21,7 +21,9 @@ def dateorstring:
   end;
 
 def estype:
-  if type=="number" then
+  if type=="object" then
+    {"properties": with_entries(.value |= estype)}
+  elif type=="number" then
     floatorinteger
   elif type=="string" then
     dateorstring
@@ -29,9 +31,8 @@ def estype:
     { "type": type }
   end;
 
-def esprop:
-  if type=="object" then
-    {"properties": with_entries(.value |= estype)}
-  else
-    estype
-  end;
+def prop:
+  with_entries(select(.key | test("offset|prospector|input|beat|fields|agent|@metadata") | not)) |
+  {
+    "properties": with_entries(.value |= estype)
+  };
