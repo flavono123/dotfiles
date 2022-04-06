@@ -26,7 +26,7 @@
 	ff = only
 [core]
 	editor = /usr/local/bin/vim
-  # pager = diff-highlight | less
+  pager = diff-highlight | less
 [diff]
 	compactionHeuristic = true
 [color "blame"]
