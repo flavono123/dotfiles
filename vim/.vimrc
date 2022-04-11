@@ -5,6 +5,8 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " 무인도에 들고 갈 옵션
