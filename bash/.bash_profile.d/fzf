@@ -3,3 +3,5 @@
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -L'
+export FZF_ALT_C_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_TMUX_OPTS='-p 80%'
