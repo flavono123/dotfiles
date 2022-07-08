@@ -6,6 +6,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'tpope/vim-fugitive'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
 
