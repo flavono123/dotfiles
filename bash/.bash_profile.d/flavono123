@@ -11,6 +11,7 @@ m() {
 }
 
 alias ls="ls --color=auto"
+alias rmsw="find . -name *.swp -type f -delete -print"
 
 
 if [ ! -f $HOME/.vim/autoload/plug.vim ]
