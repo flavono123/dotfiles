@@ -1,5 +1,4 @@
 # vim: ft=sh
 
-export AWS_DEFAULT_REGION="ap-northeast-2"
 # aws cli autocomplete
 complete -C '/usr/local/bin/aws_completer' aws
