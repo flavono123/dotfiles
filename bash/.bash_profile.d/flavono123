@@ -22,3 +22,4 @@ fi
 
 # Ansible
 export ANSIBLE_GATHERING=smart
+export ANSIBLE_DISPLAY_SKIPPED_HOSTS=False
