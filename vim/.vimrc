@@ -1,3 +1,6 @@
+" vim-plug
+" install: curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 call plug#begin()
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -7,6 +10,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'tpope/vim-fugitive'
 Plug 'hashivim/vim-terraform'
+
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 call plug#end()
 
@@ -56,3 +61,6 @@ set statusline+=%{%StatuslineRight()%}
 
 " remove trailing whitespaces each line
 autocmd BufWritePre * %s/\s\+$//e
+
+" autoreload the file when changed
+set autoread
