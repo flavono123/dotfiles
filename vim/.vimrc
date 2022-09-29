@@ -9,6 +9,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'hashivim/vim-terraform'
 
 Plug 'tmux-plugins/vim-tmux-focus-events'
