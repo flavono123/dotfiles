@@ -1,19 +1,20 @@
 ## Prerequisuite
 ```sh
-# Install Homebrew
-# ref. https://brew.sh/
+# MacOS
+## Install Homebrew
+## ref. https://brew.sh/
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install the bash and change as the default shell
+## Install the bash and change as the default shell
 $ brew install bash
 
-# Install packages
+## Install packages
 $ brew install starship ripgrep wget
 ```
 
 ## Install
 ```sh
-# migrate from the local $HOME to dotfiles
+# Migrate from the local $HOME to dotfiles
 $ cp * -r ~/<config/path> <pkg>
 
 # link
