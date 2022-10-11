@@ -25,7 +25,7 @@
 	default = current
 	ff = only
 [core]
-	editor = /usr/local/bin/vim
+	editor = /usr/local/bin/nvim
   pager = diff-highlight | less
 [diff]
 	compactionHeuristic = true

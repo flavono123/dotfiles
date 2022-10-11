@@ -12,13 +12,17 @@ $ brew install bash
 $ brew install starship ripgrep wget
 ```
 
-## Install
+## Install/Uninstall
 ```sh
 # Migrate from the local $HOME to dotfiles
 $ cp * -r ~/<config/path> <pkg>
 
-# link
-$ stow -nv -S <pkg> -t ~        # test before install
+# Link
+$ stow -nv -S <pkg> -t ~        # Simulate before install
 $ stow -v -S <pkg> -t ~
-$ stow -v -S <pkg> -t ~ --adopt # overwirte to existing files
+$ stow -v -S <pkg> -t ~ --adopt # Overwirte to existing files
+
+# Unlink
+$ stow -nv -D <pkg> -t ~        # Simulate before uninstall
+$ stow -v -D <pkg> -t ~
 ```

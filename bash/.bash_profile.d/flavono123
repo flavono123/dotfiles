@@ -17,10 +17,13 @@ alias la='ll -a'
 alias rmsw="find . -name *.swp -type f -delete -print"
 
 
-# Editor(Vim)
-if [ ! -f $HOME/.vim/autoload/plug.vim ]
+# Editor(NeoVim)
+alias v='nvim'
+
+if [ ! -f "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim ]
 then
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 fi
 
 
