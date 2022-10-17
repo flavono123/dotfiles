@@ -65,3 +65,7 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " autoreload the file when changed
 set autoread
+
+" The hl-NormalFloat, the highlight group of float window of neovim, is linked
+" to Pmenu, change it as vim, to be same with Normal
+hi link NormalFloat Normal
