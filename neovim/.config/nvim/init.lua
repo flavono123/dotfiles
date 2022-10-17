@@ -1,6 +1,4 @@
-" vim-plug
-" install: curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim.cmd([[
 call plug#begin()
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -66,6 +64,8 @@ autocmd BufWritePre * %s/\s\+$//e
 " autoreload the file when changed
 set autoread
 
+
 " The hl-NormalFloat, the highlight group of float window of neovim, is linked
 " to Pmenu, change it as vim, to be same with Normal
 hi link NormalFloat Normal
+]])
