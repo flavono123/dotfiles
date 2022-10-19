@@ -4,8 +4,6 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'hashivim/vim-terraform'
@@ -114,6 +112,11 @@ local lsp_flags = {
 }
 
 require('lspconfig')['bashls'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+}
+
+require('lspconfig')['gopls'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
 }
