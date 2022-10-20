@@ -70,6 +70,8 @@ set autoread
 " The hl-NormalFloat, the highlight group of float window of neovim, is linked
 " to Pmenu, change it as vim, to be same with Normal
 hi link NormalFloat Normal
+hi Pmenu ctermfg=240 ctermbg=250
+hi PmenuSel ctermfg=254 ctermbg=233
 ]])
 
 require("lsp")
