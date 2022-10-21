@@ -34,14 +34,19 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
+-- Add additional capabilities supported by nvim-cmp
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 require('lspconfig')['bashls'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
+  capabilities = capabilities,
 }
 
 require('lspconfig')['gopls'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
+  capabilities = capabilities,
 }
 
 require('lspconfig')['golangci_lint_ls'].setup {
@@ -49,5 +54,6 @@ require('lspconfig')['golangci_lint_ls'].setup {
   flags = lsp_flags,
   init_options = {
     command = { "golangci-lint", "run", "--out-format", "json" }
-  }
+  },
+  capabilities = capabilities,
 }
