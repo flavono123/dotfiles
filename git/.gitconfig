@@ -18,7 +18,6 @@
 	amd = cm --amend
 	cpc = cp --continue
 	log1 = log --oneline
-	sync = !git co master && git pull && git co develop && git pull && git fetch --tags --force && git merge master
 [push]
 	default = current
 [pull]
