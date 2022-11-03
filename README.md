@@ -9,7 +9,7 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 $ brew install bash
 
 ## Install packages
-$ brew install bash-completion bat coreutils findutils git gpg npm starship stow ripgrep wget
+$ brew install bash-completion bat coreutils findutils git gpg pinetry-mac npm starship stow ripgrep wget
 ```
 
 ## Install/Uninstall
