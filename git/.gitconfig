@@ -3,7 +3,7 @@
 [user]
 	name = flavono123
 	email = flavono123@gmail.com
-  signkey = 8952C766F4361108
+  signkey = 72BD55B2B443CFFD
 [commit]
   gpgsign = true
 [gpg]
