@@ -57,3 +57,9 @@ require('lspconfig')['golangci_lint_ls'].setup {
   },
   capabilities = capabilities,
 }
+
+require('lspconfig')['yamlls'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+}
