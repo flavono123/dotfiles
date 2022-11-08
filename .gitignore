@@ -1,2 +1,2 @@
-secrets # bash
 .DS_Store
+bash/.bash_profile.d/atlaslabs

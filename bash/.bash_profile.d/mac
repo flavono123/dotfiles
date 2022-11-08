@@ -1,0 +1,3 @@
+# vim: ft=sh
+
+export PATH="/Users/$USER/Library/Python/3.9/bin:$PATH"
