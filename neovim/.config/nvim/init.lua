@@ -80,3 +80,4 @@ hi PmenuSel ctermfg=254 ctermbg=233
 ]])
 
 require("lsp")
+require("vim")
