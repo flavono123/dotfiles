@@ -1,5 +1,7 @@
+require('os')
+
 vim.filetype.add({
   filename = {
-    ['/Users/hans/.kube/config'] = 'yaml',
+    [os.getenv('HOME') .. '/.kube/config'] = 'yaml',
   },
 })
