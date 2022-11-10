@@ -77,6 +77,14 @@ set autoread
 hi link NormalFloat Normal
 hi Pmenu ctermfg=240 ctermbg=250
 hi PmenuSel ctermfg=254 ctermbg=233
+
+
+" Highlight for diff mode
+" ref. https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
+hi DiffAdd      ctermfg=NONE          ctermbg=Green
+hi DiffChange   ctermfg=NONE          ctermbg=NONE
+hi DiffDelete   ctermfg=LightBlue     ctermbg=Red
+hi DiffText     ctermfg=Yellow        ctermbg=Red
 ]])
 
 require("lsp")
