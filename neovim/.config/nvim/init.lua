@@ -85,6 +85,10 @@ hi DiffAdd      ctermfg=NONE          ctermbg=Green
 hi DiffChange   ctermfg=NONE          ctermbg=NONE
 hi DiffDelete   ctermfg=LightBlue     ctermbg=Red
 hi DiffText     ctermfg=Yellow        ctermbg=Red
+
+if &diff
+  set diffopt=internal,indent-heuristic,filler,context:10000000
+endif
 ]])
 
 require("lsp")
