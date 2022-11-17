@@ -18,6 +18,7 @@
 	amd = cm --amend
 	cpc = cp --continue
 	log1 = log --oneline
+  root = rev-parse --show-toplevel
 [push]
 	default = current
 [pull]
