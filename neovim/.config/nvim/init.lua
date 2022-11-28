@@ -89,6 +89,9 @@ hi DiffText     ctermfg=Yellow        ctermbg=Red
 if &diff
   set diffopt=internal,indent-heuristic,filler,context:10000000
 endif
+
+" Yank to clipboard
+set clipboard=unnamed
 ]])
 
 require("lsp")
