@@ -6,6 +6,8 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'stevearc/aerial.nvim'
+
 Plug 'hashivim/vim-terraform'
 
 Plug 'tmux-plugins/vim-tmux-focus-events'
