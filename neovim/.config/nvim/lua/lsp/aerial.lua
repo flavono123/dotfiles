@@ -1,6 +1,7 @@
 require('aerial').setup({
   -- optionally use on_attach to set keymaps when aerial has attached to a buffer
   backends = { "lsp" },
+  filter_kind = false,
   on_attach = function(bufnr)
     -- Jump forwards/backwards with '{' and '}'
     vim.keymap.set('n', '{', '<cmd>AerialPrev<CR>', {buffer = bufnr})
