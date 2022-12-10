@@ -70,6 +70,12 @@ require('lspconfig')['yamlls'].setup {
   capabilities = capabilities,
 }
 
+require('lspconfig')['taplo'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+}
+
 require('lspconfig')['terraformls'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
