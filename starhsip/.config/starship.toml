@@ -1,2 +1,5 @@
 [kubernetes]
 disabled = false
+
+[kubernetes.context_aliases]
+"arn:.*/(?P<cluster_name>[\\w-]+)" = "aws-$cluster_name"
