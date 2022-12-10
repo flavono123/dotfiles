@@ -3,3 +3,8 @@ disabled = false
 
 [kubernetes.context_aliases]
 "arn:.*/(?P<cluster_name>[\\w-]+)" = "aws-$cluster_name"
+
+[memory_usage]
+disabled = false
+threshold = -1
+style = "bright-green"
