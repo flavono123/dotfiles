@@ -1,3 +1,11 @@
+[[battery.display]]
+threshold = 10
+style = "red"
+
+[[battery.display]]
+threshold = 50
+style = "yellow"
+
 [kubernetes]
 disabled = false
 
@@ -8,3 +16,7 @@ disabled = false
 disabled = false
 threshold = -1
 style = "bright-green"
+
+[time]
+disabled = false
+style = "white"
