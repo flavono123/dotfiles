@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+profiles = File.read('/Users/hans/.aws/credentials').split("\n").filter_map do |l|
+  l[/\w+\-\w+/] if l =~ /\[/
+end
+
+profiles.each do |profile|
+  ENV['AWS_PROFILE'] = profile
+  puts `bash -c "#{ARGV.join(' ')}"`
+end

@@ -25,4 +25,7 @@ $ stow -v -S <pkg> -t ~ --adopt # Overwirte to existing files
 # Unlink
 $ stow -nv -D <pkg> -t ~        # Simulate before uninstall
 $ stow -v -D <pkg> -t ~
+
+# Install scripts as binaries
+$ stow -v -S scripts -t /usr/local/bin
 ```
