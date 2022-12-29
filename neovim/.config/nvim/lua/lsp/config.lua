@@ -58,6 +58,29 @@ require('lspconfig')['golangci_lint_ls'].setup {
   capabilities = capabilities,
 }
 
+require('lspconfig')['sumneko_lua'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+  -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#sumneko_lua
+  settings = {
+    Lua = {
+      runtime = {
+        version = 'LuaJIT',
+      },
+      diagnostics = {
+        globals = {'vim'},
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true),
+      },
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
+}
+
 require('lspconfig')['ruby_ls'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
