@@ -39,9 +39,6 @@ nnoremap <leader>k :bfirst<CR>
 nnoremap <leader>j :blast<CR>
 nnoremap <leader>b :ls<CR>:b<Space>
 
-" scroll in tmux
-set mouse=a
-
 " statusline
 function! GitBranch()
   " TODO: from the file's git root, not the location vim running
