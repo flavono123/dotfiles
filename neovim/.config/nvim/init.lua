@@ -94,3 +94,4 @@ set clipboard=unnamed
 ]])
 
 require("lsp")
+require("plugins")
