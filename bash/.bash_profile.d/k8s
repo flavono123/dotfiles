@@ -1,6 +1,6 @@
 # vim: ft=sh
 
-if ! command -v kubectl; then
+if ! command -v kubectl > /dev/null; then
   echo "${BASH_SOURCE}: 'kubectl' could not be found"
 else
   # Bash completion v2

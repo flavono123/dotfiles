@@ -1,7 +1,7 @@
 # vim: ft=sh
 
-if ! command -v pyenv; then
-  echo "${BASH_SOURCE}: 'pyenv' could not be found"
+if ! command -v pyenv > /dev/null; then
+  : # echo "${BASH_SOURCE}: 'pyenv' could not be found"
 else
   eval "$(pyenv init --path)"
 fi
