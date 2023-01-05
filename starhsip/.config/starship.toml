@@ -16,7 +16,3 @@ disabled = false
 disabled = false
 threshold = -1
 style = "bright-green"
-
-[time]
-disabled = false
-style = "white"
