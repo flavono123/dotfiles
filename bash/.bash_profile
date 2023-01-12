@@ -11,3 +11,4 @@ do
   source "${file}"
 done
 
+. "$HOME/.cargo/env"
