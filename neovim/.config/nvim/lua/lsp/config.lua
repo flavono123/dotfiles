@@ -37,6 +37,12 @@ local lsp_flags = {
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+require('lspconfig')['ansiblels'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+}
+
 require('lspconfig')['bashls'].setup {
   on_attach = on_attach,
   flags = lsp_flags,
