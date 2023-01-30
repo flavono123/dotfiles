@@ -20,6 +20,7 @@ $ cp * -r ~/<config/path> <pkg>
 # Link
 $ stow -nv -S <pkg> -t ~        # Simulate before install
 $ stow -v -S <pkg> -t ~
+$ stow -v -S <pkg> -t ~/.config/<pkg>
 $ stow -v -S <pkg> -t ~ --adopt # Overwirte to existing files
 
 # Unlink
