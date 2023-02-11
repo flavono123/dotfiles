@@ -34,82 +34,89 @@ local on_attach = function(client, bufnr)
 end
 
 local lsp_flags = {
-  debounce_text_changes = 150,
+    debounce_text_changes = 150,
 }
 
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 require('lspconfig')['ansiblels'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['bashls'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['gopls'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['golangci_lint_ls'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  init_options = {
-    command = { "golangci-lint", "run", "--out-format", "json" }
-  },
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    init_options = {
+        command = { "golangci-lint", "run", "--out-format", "json" }
+    },
+    capabilities = capabilities,
 }
 
 require('lspconfig')['sumneko_lua'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
-  -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#sumneko_lua
-  settings = {
-    Lua = {
-      runtime = {
-        version = 'LuaJIT',
-      },
-      diagnostics = {
-        globals = { 'vim' },
-      },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      telemetry = {
-        enable = false,
-      },
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+    -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#sumneko_lua
+    settings = {
+        Lua = {
+            runtime = {
+                version = 'LuaJIT',
+            },
+            diagnostics = {
+                globals = { 'vim' },
+            },
+            workspace = {
+                library = vim.api.nvim_get_runtime_file("", true),
+            },
+            telemetry = {
+                enable = false,
+            },
+            format = {
+                enable = true,
+                defaultConfig = {
+                    indent_style = "space",
+                    indent_size = "2",
+                }
+            },
+        },
     },
-  },
 }
 
 require('lspconfig')['ruby_ls'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['yamlls'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['taplo'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
 
 require('lspconfig')['terraformls'].setup {
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
 }
