@@ -93,6 +93,6 @@ endif
 set clipboard=unnamed
 ]])
 
-require("plugins")
-require("lsp")
-require("linter")
+require('plugins')
+require('lsp')
+require('linter')

@@ -1,1 +1,1 @@
-require("linter.null_ls")
+require('linter.null_ls')

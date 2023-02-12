@@ -15,7 +15,7 @@ $ brew install bash-completion bat coreutils findutils git gpg pinetry-mac npm s
 ## Install/Uninstall
 ```sh
 # Migrate from the local $HOME to dotfiles
-$ cp * -r ~/<config/path> <pkg>
+$ cp -r ~/<config/path>/* <pkg>
 
 # Link
 $ stow -nv -S <pkg> -t ~        # Simulate before install
