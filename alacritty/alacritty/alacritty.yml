@@ -2,7 +2,3 @@ font:
   normal:
     family: FiraCode Nerd Font
   size: 16
-
-window:
-  decorations: none
-
