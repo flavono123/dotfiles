@@ -30,7 +30,7 @@ syntax on
 " finder
 let mapleader=","
 nnoremap <leader>p :Files<CR>
-nnoremap <leader>f :Rg<CR>
+" nnoremap <leader>f :Rg<CR>
 
 " buffer
 nnoremap <leader>h :bprev<CR>
@@ -96,3 +96,4 @@ set clipboard=unnamed
 require('plugins')
 require('lsp')
 require('linter')
+require('config')
