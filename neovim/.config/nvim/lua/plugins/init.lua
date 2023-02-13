@@ -4,15 +4,9 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-    'jose-elias-alvarez/null-ls.nvim',
-    config = function() require('null-ls').setup() end,
-    requires = { 'nvim-lua/plenary.nvim' },
-  }
-
-  use {
     'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
-    requires = { { 'nvim-lua/plenary.nvim' } },
+    requires = { 'nvim-lua/plenary.nvim' },
   }
 
   use {
@@ -22,5 +16,32 @@ return require('packer').startup(function(use)
       vim.o.timeoutlen = 300
       require('which-key').setup {}
     end,
+  }
+
+  -- Formatter
+  use {
+    'jose-elias-alvarez/null-ls.nvim',
+    config = function() require('null-ls').setup() end,
+    requires = { 'nvim-lua/plenary.nvim' },
+  }
+
+  -- DAP
+  use { 'mfussenegger/nvim-dap' }
+
+  use {
+    'theHamsta/nvim-dap-virtual-text',
+    requires = { 'mfussenegger/nvim-dap' },
+  }
+  use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
+  use {
+    'nvim-telescope/telescope-dap.nvim',
+    requires = { 'mfussenegger/nvim-dap' },
+  }
+
+  use { 'mfussenegger/nvim-dap-python', requires = { 'mfussenegger/nvim-dap' } }
+  use {
+    'jbyuki/one-small-step-for-vimkind',
+    module = 'osv',
+    requires = { 'mfussenegger/nvim-dap' },
   }
 end)
