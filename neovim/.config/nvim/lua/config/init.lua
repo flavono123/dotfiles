@@ -1,3 +1,5 @@
 require('config.telescope')
 require('config.which_key')
+require('config.lsp')
+require('config.linter')
 require('config.dap')

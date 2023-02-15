@@ -94,7 +94,5 @@ set clipboard=unnamed
 ]])
 
 require('plugins')
-require('lsp')
-require('linter')
 require('config')
 require('colorschemes')
