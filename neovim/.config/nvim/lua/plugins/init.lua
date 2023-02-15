@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
     end,
   }
 
+  use { 'catppuccin/nvim', as = 'catppuccin' }
+
   -- Formatter
   use {
     'jose-elias-alvarez/null-ls.nvim',
