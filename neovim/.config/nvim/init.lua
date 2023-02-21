@@ -70,21 +70,6 @@ autocmd BufWritePre * %s/\s\+$//e
 " autoreload the file when changed
 set autoread
 
-
-" The hl-NormalFloat, the highlight group of float window of neovim, is linked
-" to Pmenu, change it as vim, to be same with Normal
-hi link NormalFloat Normal
-hi Pmenu ctermfg=240 ctermbg=250
-hi PmenuSel ctermfg=254 ctermbg=233
-
-
-" Highlight for diff mode
-" ref. https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
-hi DiffAdd      ctermfg=NONE          ctermbg=22
-hi DiffChange   ctermfg=NONE          ctermbg=NONE
-hi DiffDelete   ctermfg=LightBlue     ctermbg=Red
-hi DiffText     ctermfg=Yellow        ctermbg=Red
-
 if &diff
   set diffopt=internal,indent-heuristic,filler,context:10000000
 endif
