@@ -25,8 +25,8 @@
 	default = current
 	ff = only
 [core]
-	editor = /usr/local/bin/nvim
-  pager = diff-highlight | less
+	editor = nvim
+  pager = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
 [diff]
 	compactionHeuristic = true
 [color "blame"]
