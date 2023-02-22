@@ -7,3 +7,6 @@ stow -v jq -t ~
 stow -v skhd -t ~
 stow -v starhsip -t ~
 stow -v yabai -t ~
+stow -v alacritty -t ~
+stow -v spacebar -t ~
+stow -v luaformatter -t ~
