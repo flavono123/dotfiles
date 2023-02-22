@@ -5,7 +5,7 @@ stow -v neovim -t ~
 stow -v gnupg -t ~
 stow -v jq -t ~
 stow -v skhd -t ~
-stow -v starhsip -t ~
+stow -v starship -t ~
 stow -v yabai -t ~
 stow -v alacritty -t ~
 stow -v spacebar -t ~
