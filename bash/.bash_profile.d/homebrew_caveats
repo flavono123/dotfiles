@@ -1,5 +1,8 @@
 # vim: ft=sh
 
+# For App silicon Macbook
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # OpenSSL
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl/lib"
