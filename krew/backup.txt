@@ -1,0 +1,13 @@
+ctx
+flew/eks-node
+df-pv
+get-all
+ingress-nginx
+krew
+neat
+ns
+prompt
+resource-capacity
+stern
+view-secret
+
