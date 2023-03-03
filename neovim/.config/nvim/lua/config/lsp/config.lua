@@ -1,34 +1,69 @@
-local opts = { noremap = true, silent = true }
-vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
+local wk = require('which-key')
 
+local opts_n = {
+  mode = 'n',
+  prefix = '<leader>',
+  buffer = nil,
+  silent = true,
+  noremap = true,
+  nowait = false,
+}
+
+local lsp_keymap = {
+  d = {
+    name = 'Diagnostic',
+    e = { '<cmd>lua vim.diagnostic.open_float()<cr>', 'Open Diagnostic Float' },
+    d = { '<cmd>lua vim.diagnostic.goto_prev()<cr>', 'Next Diagnostic' },
+    D = { '<cmd>lua vim.diagnostic.goto_prev()<cr>', 'Prev Diagnostic' },
+    q = {
+      '<cmd>lua vim.diagnostic.setloclist()<cr>', 'Popup Diagnostic List below',
+    },
+  },
+}
+
+wk.register(lsp_keymap, opts_n)
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(_, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
+  local bufopts_n = {
+    mode = 'n',
+    prefix = '<leader>',
+    buffer = nil,
+    silent = true,
+    noremap = true,
+    nowait = false,
+  }
+
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local bufopts = { noremap = true, silent = true, buffer = bufnr }
-  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
-  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
-  vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
-  vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
-  vim.keymap.set('n', '<space>wl', function()
-    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-  end, bufopts)
-  vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
-  vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-  vim.keymap.set('n', '<space>f',
-                 function() vim.lsp.buf.format { async = true } end, bufopts)
+  local lsp_buf_keymap = {
+    l = {
+      name = 'LSP',
+      d = { '<cmd>lua vim.lsp.buf.declaration()<cr>', 'Go to declaration' },
+      D = { '<cmd>lua vim.lsp.buf.declaration()<cr>', 'Go to definition' },
+      h = { '<cmd>lua vim.lsp.buf.hover()<cr>', 'Hover' },
+      i = { '<cmd>lua vim.lsp.buf.implementation()<cr>', 'Implementation' },
+      s = { '<cmd>lua vim.lsp.buf.signature_help()<cr>', 'Signature Help' },
+      t = { '<cmd>lua vim.lsp.buf.type_definition()<cr>', 'Show Type' },
+      r = { '<cmd>lua vim.lsp.buf.references()<cr>', 'Show References' },
+    },
+  }
+
+  wk.register(lsp_buf_keymap, bufopts_n)
+
+  -- local bufopts = { noremap = true, silent = true, buffer = bufnr }
+  -- vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
+  -- vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
+  -- vim.keymap.set('n', '<space>wl', function()
+  --  print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+  -- end, bufopts)
+  -- vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
+  -- vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
+  -- vim.keymap.set('n', '<space>f',
+  --                function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
 local lsp_flags = { debounce_text_changes = 150 }
