@@ -46,4 +46,6 @@ return require('packer').startup(function(use)
     module = 'osv',
     requires = { 'mfussenegger/nvim-dap' },
   }
+
+  use { 'github/copilot.vim' }
 end)
