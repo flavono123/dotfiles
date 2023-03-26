@@ -20,6 +20,10 @@ local telescop_keymap = {
     },
     b = { '<cmd>lua require(\'telescope.builtin\').buffers()<cr>', 'Buffer' },
     h = { '<cmd>lua require(\'telescope.builtin\').help_tags()<cr>', 'Help' },
+    o = {
+      '<cmd>lua require(\'telescope.builtin\').oldfiles()<cr>',
+      'Recently Opened Files',
+    },
   },
 }
 
