@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+g cmd+b",
+        "command": "git.branch"
+    },
+    {
+        "key": "cmd+g cmd+p",
+        "command": "git.push"
+    },
+    {
+        "key": "cmd+g cmd+c",
+        "command": "git.commitAll"
+    },
+    {
+        "key": "cmd+x cmd+a",
+        "command": "workbench.action.files.saveFiles"
+    },
+    {
+        "key": "shift+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "cmd+g cmd+u",
+        "command": "git.unstageAll"
+    },
+]

@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Default Dark+ Experimental",
+    "editor.inlineSuggest.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true
+    },
+    // auto sync main/master branch
+    "git.autofetch": true,
+
+    // allow force push
+    "git.allowForcePush": true,
+    "git.confirmForcePush": false,
+
+    // gpg signing
+    "git.enableCommitSigning": true,
+    "explorer.confirmDelete": false,
+
+    // auto save(for COMMIT_MSG indeed)    "files.autoSave": "afterDelay",
+}
