@@ -57,9 +57,9 @@ alt - s : yabai -m space --layout stack
 # close focused window
 alt - w : yabai -m window --close
 
-
+#
 # enter fullscreen mode for the focused container
-alt - f : yabai -m window --toggle zoom-fullscreen
+# alt - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle window native fullscreen
 alt + shift - f : yabai -m window --toggle native-fullscreen
