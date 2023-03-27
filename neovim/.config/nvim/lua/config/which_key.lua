@@ -27,6 +27,8 @@ local telescop_keymap = {
   },
 }
 
+wk.register(telescop_keymap, opts_n)
+
 local dap_keymap = {
   d = {
     name = 'Debug',
@@ -60,5 +62,14 @@ local dap_keymap = {
   },
 }
 
-wk.register(telescop_keymap, opts_n)
 wk.register(dap_keymap, opts_n)
+
+local peek_keymap = {
+  p = {
+    name = 'Peek',
+    o = { '<cmd>lua require(\'peek\').open()<cr>', 'Open Markdown Preview' },
+    c = { '<cmd>lua require(\'peek\').close()<cr>', 'Close Markdown Preview' },
+  },
+}
+
+wk.register(peek_keymap, opts_n)

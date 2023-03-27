@@ -47,5 +47,9 @@ return require('packer').startup(function(use)
     requires = { 'mfussenegger/nvim-dap' },
   }
 
+  -- GOD
   use { 'github/copilot.vim' }
+
+  -- Markdown preview
+  use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
 end)
