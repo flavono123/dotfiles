@@ -30,4 +30,8 @@
         "key": "cmd+g cmd+u",
         "command": "git.unstageAll"
     },
+    {
+        "key": "cmd+g cmd+a",
+        "command": "git.commitAllAmend"
+    },
 ]
