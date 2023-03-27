@@ -21,5 +21,6 @@
     "git.enableCommitSigning": true,
     "explorer.confirmDelete": false,
 
-    // auto save(for COMMIT_MSG indeed)    "files.autoSave": "afterDelay",
+    // auto save(for COMMIT_MSG indeed)
+    "files.autoSave": "afterDelay",
 }
