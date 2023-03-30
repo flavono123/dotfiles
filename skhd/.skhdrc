@@ -42,7 +42,7 @@ alt + shift - 9 : yabai -m window --space 9
 # mirror tree y-axis
 alt + shift - y : yabai -m space --mirror y-axis
 
-alt + shift - x : yabai -m space --mirror x-axis
+# alt + shift - x : yabai -m space --mirror x-axis
 
 # balance size of windows
 alt + shift - 0 : yabai -m space --balance

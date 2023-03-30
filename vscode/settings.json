@@ -1,26 +1,32 @@
 {
-    "workbench.colorTheme": "Default Dark+ Experimental",
-    "editor.inlineSuggest.enabled": true,
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": true,
-        "plaintext": true,
-        "markdown": true
-    },
-    // auto sync main/master branch
-    "git.autofetch": true,
-
-    // allow force push
-    "git.allowForcePush": true,
-    "git.confirmForcePush": false,
-
-    // gpg signing
-    "git.enableCommitSigning": true,
-    "explorer.confirmDelete": false,
-
-    // auto save(for COMMIT_MSG indeed)
-    "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Default Dark+ Experimental",
+  "editor.inlineSuggest.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
+  // auto sync main/master branch
+  "git.autofetch": true,
+  "git.autofetchPeriod": 600,
+  "git.fetchOnPull": true,
+  // allow force push
+  "git.allowForcePush": true,
+  "git.confirmForcePush": false,
+  // gpg signing
+  "git.enableCommitSigning": true,
+  "explorer.confirmDelete": false,
+  // auto save(for COMMIT_MSG indeed)
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  // force 2-space indentation
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  // force newline at end of file
 }
