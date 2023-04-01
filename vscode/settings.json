@@ -2,7 +2,8 @@
   "workbench.colorTheme": "Default Dark+ Experimental",
   "editor.inlineSuggest.enabled": true,
   "[python]": {
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "github.copilot.enable": {
     "*": true,
@@ -23,10 +24,16 @@
   // auto save(for COMMIT_MSG indeed)
   "files.autoSave": "afterDelay",
   "editor.formatOnSave": true,
-  "files.insertFinalNewline": true,
   // force 2-space indentation
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
-  // force newline at end of file
+  // force EOF newline, trim trailing whitespace
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  // allow multi-line paste
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  // TDB
+  "python.defaultInterpreterPath": "/Users/hans/.pyenv/versions/3.11.2/bin/python",
+  "git.openRepositoryInParentFolders": "never",
 }
