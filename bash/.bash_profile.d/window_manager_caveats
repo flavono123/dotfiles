@@ -1,0 +1,4 @@
+# vim: ft=sh
+
+yabai --start-service
+skhd --start-service
