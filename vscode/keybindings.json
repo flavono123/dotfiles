@@ -9,10 +9,6 @@
     "command": "git.push"
   },
   {
-    "key": "cmd+g cmd+c",
-    "command": "git.commitAll"
-  },
-  {
     "key": "shift+alt+f",
     "command": "-editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
@@ -33,4 +29,20 @@
     "key": "cmd+g cmd+l",
     "command": "git.pull"
   },
+  {
+    "key": "ctrl+shift+c",
+    "command": "remote-containers.openFolder"
+  },
+  {
+    "key": "cmd+g cmd+f",
+    "command": "git.pushForce"
+  },
+  {
+    "key": "cmd+g cmd+r",
+    "command": "pr.create"
+  },
+  {
+    "key": "cmd+g cmd+c",
+    "command": "git.commitAllSigned"
+  }
 ]

@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Default Dark+ Experimental",
+  "workbench.colorTheme": "Default Dark",
   "editor.inlineSuggest.enabled": true,
   "[python]": {
     "editor.formatOnType": true,
@@ -34,6 +34,11 @@
   // allow multi-line paste
   "terminal.integrated.enableMultiLinePasteWarning": false,
   // TDB
-  "python.defaultInterpreterPath": "/Users/hans/.pyenv/versions/3.11.2/bin/python",
   "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.external.osxExec": "Alacritty.app",
+  "settingsSync.ignoredSettings": [
+    "terminal.external.osxExec"
+  ],
+  "security.workspace.trust.untrustedFiles": "open"
 }

@@ -12,3 +12,9 @@ stow -v spacebar -t ~
 stow -v luaformatter -t ~
 
 stow -v git -t ~
+
+# vscode settings
+stow -v vscode -t ~/Library/Application\ Support/Code/User/ --adopt
+
+# install scripts
+stow -v -S scripts -t /usr/local/bin
