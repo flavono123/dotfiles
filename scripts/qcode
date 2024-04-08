@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+url="$1"
+base_path="$WORKSPACE/src/git.projectbro.com"
+
+# Check if the URL starts with "https://" or "git@"
+if [[ "$url" == "https://"* ]]; then
+    repo_name="${url#https://git.projectbro.com/}"
+    ssh_url="git@git.projectbro.com:${repo_name%.git}.git"
+elif [[ "$url" == "git@"* ]]; then
+    ssh_url="$url"
+    repo_name="${url#git@git.projectbro.com:}"
+    repo_name="${repo_name%.git}"
+else
+    echo "Invalid URL format: $url"
+    return 1
+fi
+
+code_path="$base_path/$repo_name"
+
+# Check if the directory already exists
+if [ ! -d "$code_path" ]; then
+    echo "Directory does not exist. Cloning from URL..."
+    git clone "$ssh_url" "$code_path"
+fi
+
+# Open the directory in Visual Studio Code
+echo "Opening directory in Visual Studio Code... $code_path"
+code "$code_path"

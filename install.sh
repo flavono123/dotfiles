@@ -10,3 +10,5 @@ stow -v yabai -t ~
 stow -v alacritty -t ~
 stow -v spacebar -t ~
 stow -v luaformatter -t ~
+
+stow -v git -t ~
