@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export WORKSPACE=$HOME/workspaces
+
 url="$1"
 base_path="$WORKSPACE/src/git.projectbro.com"
 
