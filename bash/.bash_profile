@@ -11,8 +11,6 @@ do
   source "${file}"
 done
 
-. "$HOME/.cargo/env"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/hans/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/hans/Downloads/google-cloud-sdk/path.bash.inc'; fi
 

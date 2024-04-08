@@ -1,8 +1,0 @@
-font:
-  normal:
-    family: FiraCode Nerd Font
-  size: 16
-shell:
-  program: $(brew --prefix)/bin/bash
-  args:
-  - --login
