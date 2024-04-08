@@ -4,7 +4,7 @@ if ! command -v kubectl > /dev/null; then
   echo "${BASH_SOURCE}: 'kubectl' could not be found"
 else
   # Bash completion v2
-  [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+  [[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
   # k8s alias and auto complete
   source <(kubectl completion bash)

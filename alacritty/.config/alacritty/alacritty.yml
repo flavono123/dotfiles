@@ -3,6 +3,6 @@ font:
     family: FiraCode Nerd Font
   size: 16
 shell:
-  program: /opt/homebrew/bin/bash
+  program: $(brew --prefix)/bin/bash
   args:
-    - --login
+  - --login
