@@ -1,6 +1,6 @@
 ctx
-flew/eks-node
 df-pv
+flew/view-labels
 get-all
 ingress-nginx
 krew
@@ -10,4 +10,3 @@ prompt
 resource-capacity
 stern
 view-secret
-

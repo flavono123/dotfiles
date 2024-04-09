@@ -3,11 +3,11 @@
 [user]
 	name = flavono123
 	email = flavono123@gmail.com
-  	signkey = 72BD55B2B443CFFD
+  signkey = 72BD55B2B443CFFD
 [commit]
-  	gpgsign = true
+  gpgsign = true
 [gpg]
-  	program = gpg
+  program = gpg
 [alias]
 	br = branch
 	cm = commit -as
@@ -18,7 +18,7 @@
 	amd = cm --amend
 	cpc = cp --continue
 	log1 = log --oneline
-  	root = rev-parse --show-toplevel
+  root = rev-parse --show-toplevel
 [push]
 	default = current
 [pull]
