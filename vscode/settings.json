@@ -11,6 +11,11 @@
     "plaintext": true,
     "markdown": true
   },
+  // set indent as 4 for typescript
+  "[typescript]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
   // auto sync main/master branch
   "git.autofetch": true,
   "git.autofetchPeriod": 600,
