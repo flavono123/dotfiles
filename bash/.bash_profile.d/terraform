@@ -1,1 +1,7 @@
+# vim: ft=sh
+
+if [ -f "$HOME/.terraform.d/terraform-plan-summary" ] && [ -x "$HOME/.terraform.d/terraform-plan-summary" ]; then
+  alias terraform="$HOME/.terraform.d/terraform-plan-summary"
+fi
+
 alias tf=terraform

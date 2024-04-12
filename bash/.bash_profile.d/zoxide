@@ -1,0 +1,7 @@
+# vim: ft=sh
+
+if ! command -v zoxide > /dev/null; then
+  echo "${BASH_SOURCE}: 'zoxide' could not be found"
+else
+  eval "$(zoxide init --cmd cd bash)"
+fi
