@@ -16,6 +16,12 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true
   },
+  "[git-commit]": {
+    "editor.rulers": [
+      50,
+      72
+    ]
+  },
   // auto sync main/master branch
   "git.autofetch": true,
   "git.autofetchPeriod": 600,
