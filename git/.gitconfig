@@ -27,6 +27,7 @@
 [core]
 	editor = nvim
   pager = $(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight | less
+	hooksPath = .githooks
 [diff]
 	compactionHeuristic = true
 [color "blame"]
