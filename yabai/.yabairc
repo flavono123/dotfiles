@@ -41,3 +41,6 @@ yabai -m rule --add title='Settings$' manage=off
 # spacebar padding on top screen
 SPACEBAR_HEIGHT=$(spacebar -m config height)
 yabai -m config external_bar all:$SPACEBAR_HEIGHT:0
+
+# for Arc: https://github.com/koekeishiya/yabai/issues/1622#issuecomment-1434819692
+yabai -m rule --add app="^Arc$" title="^$" mouse_follows_focus=off
