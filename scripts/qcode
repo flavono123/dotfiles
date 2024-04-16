@@ -26,6 +26,13 @@ if [ ! -d "$code_path" ]; then
     git clone "$ssh_url" "$code_path"
 fi
 
+cd "$code_path" || return 1
+
+# Set git config
+ git config user.name Hansuk\ Hong
+ git config user.email hansuk.hong@pubg.com
+ git config user.signkey D9A5FCA6534C730A
+
 # Open the directory in Visual Studio Code
 echo "Opening directory in Visual Studio Code... $code_path"
 code "$code_path"
