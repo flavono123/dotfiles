@@ -19,6 +19,7 @@
 	cpc = cp --continue
 	log1 = log --oneline
   root = rev-parse --show-toplevel
+  pcm = log -1 --pretty=format:"%B"
 [push]
 	default = current
 [pull]
