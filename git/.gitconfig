@@ -28,6 +28,10 @@
 	editor = nvim
   pager = $(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight | less
 	hooksPath = .githooks
+  eol = lf
+	autocrlf = input
+	safecrlf = true
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [diff]
 	compactionHeuristic = true
 [color "blame"]
