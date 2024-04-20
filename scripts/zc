@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# zoxide and code are required
+if ! command -v zoxide &> /dev/null || ! command -v code &> /dev/null; then
+  echo "zoxide is required"
+else
+  # https://github.com/ajeetdsouza/zoxide/issues/789#issuecomment-2067593898
+  _result="$(zoxide query -- "$@")" && code "$_result"
+fi
