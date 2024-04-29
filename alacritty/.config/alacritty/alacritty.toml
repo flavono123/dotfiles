@@ -1,3 +1,7 @@
+import = [
+  "~/.config/alacritty/themes/themes/github_dark.toml"
+]
+
 [font]
 size = 16
 
@@ -7,3 +11,5 @@ family = "FiraCode Nerd Font"
 [shell]
 args = ["--login"]
 program = "/usr/local/bin/bash"
+
+
