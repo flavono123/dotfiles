@@ -1,16 +1,16 @@
-local telescope = require('telescope')
+local telescope = require "telescope"
 
-telescope.setup({
+telescope.setup {
   defaults = {
     vimgrep_arguments = {
       "rg",
-      "--color=never",
+      "--color=never", -- copy default
       "--no-heading",
       "--with-filename",
       "--line-number",
       "--column",
       "--smart-case",
-      "--hidden", -- 추가된 옵션
+      "--hidden", -- custom start
       "--glob",
       "!**/.git/*",
     },
@@ -18,12 +18,12 @@ telescope.setup({
   pickers = {
     find_files = {
       find_command = {
-            'rg',
-            '--files',
-            '--hidden',
-            '--glob',
-            '!**/.git/*'
-          }
-      }
-  }
-})
+        "rg",
+        "--files",
+        "--hidden", -- custom start
+        "--glob",
+        "!**/.git/*",
+      },
+    },
+  },
+}
