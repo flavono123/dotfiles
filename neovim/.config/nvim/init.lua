@@ -38,6 +38,5 @@ vim.schedule(function()
   require "mappings"
 end)
 
-
 -- customs
-require("custom.plugins")
+require "custom.plugins"
