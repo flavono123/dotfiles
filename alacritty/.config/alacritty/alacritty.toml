@@ -12,4 +12,11 @@ family = "FiraCode Nerd Font"
 args = ["--login"]
 program = "/usr/local/bin/bash"
 
-
+[[hints.enabled]]
+command = "open"
+hyperlinks = true
+mouse.enabled = true
+mouse.mods = "Super"
+post_processing = true
+persist = false
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩‘]+"
