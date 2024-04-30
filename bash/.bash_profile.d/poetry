@@ -1,8 +1,0 @@
-# vim: ft=sh
-
-if ! command -v poetry > /dev/null; then
-  curl -sSL https://install.python-poetry.org | python3 -
-  export PATH="$HOME/.local/bin:$PATH"
-else
-  [ ! -f $(brew --prefix)/etc/bash_completion.d/poetry ] && poetry completions bash > $(brew --prefix)/etc/bash_completion.d/poetry
-fi
