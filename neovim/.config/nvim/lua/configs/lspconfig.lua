@@ -1,7 +1,8 @@
--- EXAMPLE 
-local on_attach = require("nvchad.configs.lspconfig").on_attach
-local on_init = require("nvchad.configs.lspconfig").on_init
-local capabilities = require("nvchad.configs.lspconfig").capabilities
+-- EXAMPLE
+local config = require "nvchad.configs.lspconfig"
+local on_attach = config.on_attach
+local on_init = config.on_init
+local capabilities = config.capabilities
 
 local lspconfig = require "lspconfig"
 local servers = { "html", "cssls" }
