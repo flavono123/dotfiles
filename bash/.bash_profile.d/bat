@@ -1,0 +1,8 @@
+# vim: ft=sh
+
+if ! command -v bat > /dev/null; then
+  echo "${BASH_SOURCE}: 'bat' could not be found"
+else
+  alias cat="bat --theme='Visual Studio Dark+' --style=numbers,changes,header"
+fi
+
