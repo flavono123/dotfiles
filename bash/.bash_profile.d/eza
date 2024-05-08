@@ -1,0 +1,7 @@
+# vim: ft=sh
+
+if ! command -v eza > /dev/null; then
+  echo "${BASH_SOURCE}: 'eza' could not be found"
+else
+  alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+fi
