@@ -28,3 +28,26 @@ padding.y = 5
 decorations = "Buttonless"
 
 option_as_alt = "Both"
+
+
+[keyboard]
+[[keyboard.bindings]]
+key = "Left"
+mods = "Control"
+chars = "\u0001"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Control"
+chars = "\u0005"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Option"
+chars = "\u001bf"
+
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Option"
+chars = "\u001bb"
