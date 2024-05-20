@@ -2,7 +2,6 @@ ctx
 df-pv
 flew/view-labels
 get-all
-ingress-nginx
 krew
 neat
 ns
