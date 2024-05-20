@@ -1,8 +1,0 @@
-# vim: ft=sh
-
-if ! command -v gh > /dev/null; then
-  echo "${BASH_SOURCE}: 'gh' could not be found"
-else
-  # set bash completion
-  eval "$(gh completion --shell bash)"
-fi

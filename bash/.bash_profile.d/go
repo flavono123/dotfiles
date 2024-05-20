@@ -1,8 +1,0 @@
-# vim: ft=sh
-
-if ! command -v go &> /dev/null; then
-  echo "go is not installed"
-else
-  export GOPATH="$HOME/go"
-  export PATH="$GOPATH/bin:$PATH"
-fi

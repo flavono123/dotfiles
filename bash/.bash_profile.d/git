@@ -1,6 +1,0 @@
-# vim: ft=sh
-
-# Diff-highlight
-export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH"
-
-alias gr='cd $(git root)'
