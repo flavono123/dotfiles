@@ -5,7 +5,12 @@ local on_init = config.on_init
 local capabilities = config.capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls" }
+local servers = {
+  "html",
+  "cssls",
+  "tsserver",
+  "terraformls",
+}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -15,10 +20,3 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
-
--- typescript
-lspconfig.tsserver.setup {
-  on_attach = on_attach,
-  on_init = on_init,
-  capabilities = capabilities,
-}

@@ -44,17 +44,24 @@ return {
         "typescript-language-server",
         "stylua",
         "prettier",
+        -- Terraform
+        "terraform-ls",
       },
     },
   },
-  --
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	}
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        -- Terraform
+        "terraform",
+        "hcl",
+      },
+    },
+  },
 }
