@@ -1,0 +1,23 @@
+# vim: ft=sh
+
+
+# Kubernetes
+alias k="kubectl"
+
+# Node.js
+alias pn="pnpm"
+
+# Terraform
+if [ -f "$HOME/.terraform.d/terraform-plan-summary" ] && [ -x "$HOME/.terraform.d/terraform-plan-summary" ]; then
+  alias terraform="$HOME/.terraform.d/terraform-plan-summary"
+fi
+
+alias tf="terraform"
+
+# flavono123
+alias cat="bat --theme='Visual Studio Dark+' --style=numbers,changes,header"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ll="ls -l"
+alias la="ll -a"
+alias rmsw='find ~/.local -name "*.swp" -type f -delete -print'
+alias v="nvim"

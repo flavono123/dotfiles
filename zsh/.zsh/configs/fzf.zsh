@@ -1,6 +1,4 @@
-# vim: ft=sh
-
-eval "$(fzf --bash)"
+source <(fzf --zsh)
 
 export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -L'
 export FZF_ALT_C_COMMAND=$FZF_DEFAULT_COMMAND
@@ -26,3 +24,13 @@ _fzf_comprun() {
     *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
   esac
 }
+
+
+# install fzf-git.sh
+fzf_git_file="$HOME"/fzf-git.sh
+
+if [[ ! -f $fzf_git_file ]]; then
+  curl -s -o $fzf_git_file "https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh"
+fi
+
+. "$fzf_git_file"
