@@ -46,6 +46,13 @@ return {
         "prettier",
         -- Terraform
         "terraform-ls",
+        -- Go
+        "gopls",
+        "goimports",
+        "gofumpt",
+        "gomodifytags",
+        "impl",
+        "delve",
       },
     },
   },
@@ -61,6 +68,11 @@ return {
         -- Terraform
         "terraform",
         "hcl",
+        -- Go
+        "go",
+        "gomod",
+        "gowork",
+        "gosum",
       },
     },
   },
