@@ -6,5 +6,10 @@ return {
         visible = true,
       },
     },
+    window = {
+      mappings = {
+        ["s"] = "open_vsplit",
+      },
+    },
   },
 }
