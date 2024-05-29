@@ -4,9 +4,8 @@ brew bundle dump -f
 
 # 변경사항이 있는지 확인
 if git diff --quiet Brewfile; then
-  exit 0
+	exit 0
 fi
 
-# 변경사항이 있으면 커밋
+# 변경사항이 있으면 커밋에 포함
 git add Brewfile
-git commit -m "ci: update brewfile [auto-gen]"
