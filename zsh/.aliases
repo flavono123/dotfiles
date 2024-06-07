@@ -1,6 +1,5 @@
 # vim: ft=sh
 
-
 # Kubernetes
 alias k="kubectl"
 
@@ -9,7 +8,7 @@ alias pn="pnpm"
 
 # Terraform
 if [ -f "$HOME/.terraform.d/terraform-plan-summary" ] && [ -x "$HOME/.terraform.d/terraform-plan-summary" ]; then
-  alias terraform="$HOME/.terraform.d/terraform-plan-summary"
+	alias terraform="$HOME/.terraform.d/terraform-plan-summary"
 fi
 
 alias tf="terraform"
@@ -21,3 +20,4 @@ alias ll="ls -l"
 alias la="ll -a"
 alias rmsw='find ~/.local -name "*.swp" -type f -delete -print'
 alias v="nvim"
+alias gpt="gh copilot suggest -t shell"
