@@ -4,3 +4,12 @@ zstyle ':fzf-tab:complete:mv:*' fzf-preview 'eza --all --tree --color=always $re
 
 autoload -Uz compinit
 compinit -i
+
+# aws
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+
+complete -C '/usr/local/bin/aws_completer' aws
+
+# kubectl
+source <(kubectl completion zsh)
