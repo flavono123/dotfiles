@@ -7,3 +7,6 @@ local map = LazyVim.safe_keymap_set
 -- i think bufferline override or spoil the default tabp and tabN ¯\_(ツ)_/¯
 map("n", "<tab>", "<cmd>BufferLineCycleNext<cr>")
 map("n", "<S-tab>", "<cmd>BufferLineCyclePrev<cr>")
+
+map("n", "<c-p>", "<Plug>(YankyPreviousEntry)")
+map("n", "<c-n>", "<Plug>(YankyNextEntry)")
