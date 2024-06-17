@@ -16,6 +16,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.yanky" },
     -- dap
     { import = "lazyvim.plugins.extras.dap.core" },
+    -- editor
+    { import = "lazyvim.plugins.extras.editor.leap" },
     -- lang
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
