@@ -1,5 +1,8 @@
 # vim: ft=sh
 
+# Azure
+alias azs="az account list | jq -r '.[].name' | fzf --prompt=\"Select a subscription: \" | xargs -I{} az account set --subscription {} && az account show"
+
 # Kubernetes
 alias k="kubectl"
 
