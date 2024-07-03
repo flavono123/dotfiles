@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Default Dark",
+  "workbench.colorTheme": "Spinel",
   "editor.inlineSuggest.enabled": true,
   "[python]": {
     "editor.formatOnType": true,
@@ -46,8 +46,8 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
   // TDB
   "git.openRepositoryInParentFolders": "never",
-  "terminal.integrated.defaultProfile.osx": "bash",
-  "terminal.external.osxExec": "Alacritty.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.external.osxExec": "/Applications/Alacritty.app",
   "settingsSync.ignoredSettings": [
     "terminal.external.osxExec"
   ],
