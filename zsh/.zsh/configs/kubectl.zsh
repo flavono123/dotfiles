@@ -1,0 +1,1 @@
+export KUBECTL_EXTERNAL_DIFF=difft
