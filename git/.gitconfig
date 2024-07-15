@@ -14,6 +14,7 @@
 	co = checkout
 	cp = cherry-pick
 	gr = log --graph --abbrev-commit --decorate --format=format:'%C(cyan)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)' --all
+  rb = "!f() { target=$1; git fetch origin $target && git checkout $target && git pull origin $target && git checkout - && git rebase $target; }; f"
 	st = status
 	amd = cm --amend
 	cpc = cp --continue
