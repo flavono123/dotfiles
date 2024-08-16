@@ -13,7 +13,7 @@
   },
   // set indent as 4 for typescript
   "[typescript]": {
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
   "[git-commit]": {
