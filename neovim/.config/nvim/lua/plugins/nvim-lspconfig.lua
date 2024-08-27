@@ -14,6 +14,9 @@ return {
           },
         },
       },
+      terraformls = {
+        filetypes = { "hcl", "tf", "tfvars" },
+      },
     },
   },
 }
