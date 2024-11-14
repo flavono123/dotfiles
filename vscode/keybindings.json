@@ -1,6 +1,13 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
+    "key": "cmd+g cmd+s",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "git status\n"
+    }
+  },
+  {
     "key": "cmd+g cmd+b",
     "command": "git.branch"
   },
@@ -44,5 +51,15 @@
   {
     "key": "cmd+g cmd+c",
     "command": "git.commitAllSigned"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
   }
 ]

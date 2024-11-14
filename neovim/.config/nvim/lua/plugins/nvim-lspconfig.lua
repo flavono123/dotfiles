@@ -17,6 +17,10 @@ return {
       terraformls = {
         filetypes = { "hcl", "tf", "tfvars" },
       },
+      groovyls = {
+        cmd = { "groovy-language-server" },
+        -- filetypes = { "groovy", "Jenkinsfile" },
+      },
     },
   },
 }
