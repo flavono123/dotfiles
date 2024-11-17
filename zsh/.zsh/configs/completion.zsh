@@ -13,3 +13,6 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 # kubectl
 source <(kubectl completion zsh)
+
+# dyff
+source <(dyff completion zsh)
