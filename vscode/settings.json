@@ -1,4 +1,8 @@
 {
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
   "workbench.colorTheme": "Spinel",
   "editor.inlineSuggest.enabled": true,
   "[python]": {
@@ -52,5 +56,5 @@
     "terminal.external.osxExec"
   ],
   "security.workspace.trust.untrustedFiles": "open",
-  "window.zoomLevel": 3
+  "window.zoomLevel": 0
 }

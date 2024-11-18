@@ -1,6 +1,13 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
+    "key": "cmd+g cmd+f",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "git push -f\n"
+    }
+  },
+  {
     "key": "cmd+g cmd+s",
     "command": "workbench.action.terminal.sendSequence",
     "args": {
@@ -39,10 +46,6 @@
   {
     "key": "ctrl+shift+c",
     "command": "remote-containers.openFolder"
-  },
-  {
-    "key": "cmd+g cmd+f",
-    "command": "git.pushForce"
   },
   {
     "key": "cmd+g cmd+r",

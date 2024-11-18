@@ -21,6 +21,7 @@
 	log1 = log --oneline
   root = rev-parse --show-toplevel
   pcm = log -1 --pretty=format:"%B"
+  chore = "!f() { git br -D \"$CHORE\" 2>/dev/null || true; git co -b \"$CHORE\"; }; f"
 [push]
 	default = current
 [pull]
