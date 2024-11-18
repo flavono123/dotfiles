@@ -1,0 +1,24 @@
+[aws]
+disabled = true
+
+[directory]
+disabled = true
+
+[git_branch]
+disabled = true
+
+[git_status]
+disabled = true
+
+[line_break]
+disabled = true
+
+[lua]
+disabled = true
+
+[package]
+disabled = true
+
+[helm]
+# disabled = true
+format = "[$symbol($version )]($style)"
