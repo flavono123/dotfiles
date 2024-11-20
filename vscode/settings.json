@@ -3,7 +3,7 @@
   "go.lintFlags": [
     "--fast"
   ],
-  "workbench.colorTheme": "Spinel",
+  "workbench.colorTheme": "Vesper",
   "editor.inlineSuggest.enabled": true,
   "[python]": {
     "editor.formatOnType": true,
@@ -56,5 +56,5 @@
     "terminal.external.osxExec"
   ],
   "security.workspace.trust.untrustedFiles": "open",
-  "window.zoomLevel": 0
+  "window.zoomLevel": 1
 }

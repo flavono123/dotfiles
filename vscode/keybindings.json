@@ -1,6 +1,13 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
+    "key": "cmd+g cmd+h",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "git chore\n"
+    }
+  },
+  {
     "key": "cmd+g cmd+f",
     "command": "workbench.action.terminal.sendSequence",
     "args": {

@@ -1,6 +1,4 @@
-import = [
-  "~/.config/alacritty/catppuccin_mocha.toml"
-]
+import = ["~/.config/alacritty/vesper.toml"]
 
 [font]
 size = 16
