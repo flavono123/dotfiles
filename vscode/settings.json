@@ -3,7 +3,7 @@
   "go.lintFlags": [
     "--fast"
   ],
-  "workbench.colorTheme": "Vesper",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "editor.inlineSuggest.enabled": true,
   "[python]": {
     "editor.formatOnType": true,
