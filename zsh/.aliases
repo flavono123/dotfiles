@@ -24,3 +24,10 @@ alias la="ll -a"
 alias rmsw='find ~/.local -name "*.swp" -type f -delete -print'
 alias v="nvim"
 alias gpt="gh copilot suggest -t shell"
+alias agif='gen_asciinema_gif'
+
+gen_asciinema_gif() {
+  asciinema rec "$1.cast" # -e STARSHIP_CONFIG="$HOME/.config/starship/share.toml" not working
+  agg "$1.cast" "$1.gif"
+  rm "$1".cast
+}
