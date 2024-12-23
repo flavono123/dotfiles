@@ -79,5 +79,15 @@
   {
     "key": "shift+cmd+s",
     "command": "editor.action.sortLinesAscending"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
   }
 ]
