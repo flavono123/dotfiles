@@ -89,5 +89,44 @@
     "key": "shift+cmd+l",
     "command": "-editor.action.selectHighlights",
     "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "dendron.lookupNote",
+    "when": "dendron:pluginActive"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-dendron.lookupNote",
+    "when": "dendron:pluginActive"
+  },
+  {
+    "key": "shift+cmd+v",
+    "command": "markdown.showPreviewToSide",
+    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+k v",
+    "command": "-markdown.showPreviewToSide",
+    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+v",
+    "command": "-markdown.showPreview",
+    "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "dendron.createNote"
   }
 ]

@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "Ape/open-with-cmd", rev = "a80d1cf" }]
+
+[flavor]
+deps = []

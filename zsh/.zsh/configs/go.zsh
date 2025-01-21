@@ -1,10 +1,7 @@
-if ! command -v go &> /dev/null; then
-  echo "${(%):-%N}: go is not installed"
-else
-  GOPATH="$HOME/go"
-  PATH="$GOPATH/bin:$PATH"
-fi
-
-if ! command -v goenv &> /dev/null; then
+if command -v goenv &> /dev/null; then
+  export GOENV_ROOT="$HOME/.goenv"
+  export PATH="$GOENV_ROOT/bin:$PATH"
   eval "$(goenv init -)"
+  export PATH="$GOROOT/bin:$PATH"
+  export PATH="$PATH:$GOPATH/bin"
 fi

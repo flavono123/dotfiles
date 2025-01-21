@@ -1,4 +1,5 @@
 ## Prerequisuite
+
 ```sh
 # MacOS
 ## Install Homebrew
@@ -13,6 +14,7 @@ $ brew install bash-completion bat coreutils findutils git gpg pinetry-mac npm s
 ```
 
 ## Install/Uninstall
+
 ```sh
 # Migrate from the local $HOME to dotfiles
 $ cp -r ~/<config/path>/* <pkg>
