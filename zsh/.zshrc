@@ -16,3 +16,6 @@ if [ -f '/Users/hansuk.hong/yandex-cloud/path.bash.inc' ]; then source '/Users/h
 # The next line enables shell command completion for yc.
 if [ -f '/Users/hansuk.hong/yandex-cloud/completion.zsh.inc' ]; then source '/Users/hansuk.hong/yandex-cloud/completion.zsh.inc'; fi
 
+
+# bun completions
+[ -s "/Users/hansuk.hong/.bun/_bun" ] && source "/Users/hansuk.hong/.bun/_bun"

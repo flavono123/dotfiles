@@ -30,8 +30,10 @@ alias rmsw='find ~/.local -name "*.swp" -type f -delete -print'
 
 alias agif='gen_asciinema_gif'
 
+alias nerdwars='git shortlog -ns --no-merges'
+
 gen_asciinema_gif() {
-  asciinema rec "$1.cast" # -e STARSHIP_CONFIG="$HOME/.config/starship/share.toml" not working
+  asciinema rec -c "zsh -i" "$1.cast" # -e STARSHIP_CONFIG="$HOME/.config/starship/share.toml" not working
   agg --font-size 24 --font-family "FiraCode Nerd Font" "$1.cast" "$1.gif"
   rm "$1".cast
 }

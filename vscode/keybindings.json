@@ -128,5 +128,34 @@
   {
     "key": "ctrl+l",
     "command": "dendron.createNote"
-  }
+  },
+  {
+    "key": "ctrl+n ctrl+f",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "shift+cmd+up",
+    "command": "-dendron.goUpHierarchy",
+    "when": "dendron:pluginActive && editorFocus"
+},
+{
+    "key": "ctrl+n",
+    "command": "composer.createNewChat",
+    "when": "focusedView == 'workbench.panel.aichat.view'"
+},
+{
+    "key": "cmd+n",
+    "command": "-composer.createNewChat",
+    "when": "focusedView == 'workbench.panel.aichat.view'"
+},
+{
+    "key": "shift+cmd+down",
+    "command": "-dendron.goDownHierarchy",
+    "when": "dendron:pluginActive && editorFocus"
+},
+{
+    "key": "ctrl+cmd+c",
+    "command": "issue.copyGithubPermalink",
+    "when": "!isInEmbeddedEditor"
+}
 ]
